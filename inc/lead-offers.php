@@ -21,6 +21,8 @@ class LeadOffers {
         $this->admin = $admin;
     }
 
+    
+
     // добавить мета поля 
     public function add_meta_box_for_offers() {
         add_meta_box( 'offer_meta_box', 'Дополнительные параметры оффера', [$this, 'offer_meta_box_callback'], 'lead_offers', 'normal', 'high');
