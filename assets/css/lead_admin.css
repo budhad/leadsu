@@ -1,0 +1,126 @@
+i[class^="lead_help_"] {
+    display: inline-block;
+    border: 1px solid #f00;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    font-weight: 500;
+    color: #f00;
+    margin-left: 10px;
+    cursor: help;
+}
+
+.lead_meta_box_table {
+    width: 100%;
+}
+
+.lead_meta_box_table tr {
+    width: 100%;
+    display: flex;
+}
+
+.lead_meta_box_table th {
+    text-align: left;
+    width: 200px;
+}
+
+.lead_meta_box_table td {
+    flex-grow: 1;
+}
+
+.lead_meta_input {
+    width: 100%;
+}
+
+.lead_settings_btn_line {
+    display: flex;
+}
+
+.button.active_offer {
+    border-color: #45c543;
+}
+.button.disable_offer {
+    border-color: #FE9F70;
+}
+
+
+/* preloader admin settings page */
+.preloader_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* margin-left: 25px; */
+}
+
+.preloader_container .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.preloader_container .circle:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: preloader_scale 2s infinite cubic-bezier(0, 0, 0.49, 1.02);
+}
+
+.preloader_container .circle-1 {
+    background-color: #49b8e5;
+}
+.preloader_container .circle-1:before {
+    background-color: #49b8e5;
+    animation-delay: 200ms;
+}
+
+.preloader_container .circle-2 {
+    background-color: #1e98d4;
+}
+.preloader_container .circle-2:before {
+    background-color: #1e98d4;
+    animation-delay: 400ms;
+}
+
+.preloader_container .circle-3 {
+    background-color: #2a92d0;
+}
+.preloader_container .circle-3:before {
+    background-color: #2a92d0;
+    animation-delay: 600ms;
+}
+
+.preloader_container .circle-4 {
+    background-color: #3a88c8;
+}
+.preloader_container .circle-4:before {
+    background-color: #3a88c8;
+    animation-delay: 800ms;
+}
+
+.preloader_container .circle-5 {
+    background-color: #507cbe;
+}
+.preloader_container .circle-5:before {
+    background-color: #507cbe;
+    animation-delay: 1000ms;
+}
+
+@keyframes preloader_scale {
+    0% {
+        transform: scale(1);
+    }
+    50%, 75% {
+        transform: scale(2.5);
+    }
+    78%, 100% {
+        opacity: 0;
+    }
+}
+/* end preloader admin settings page */
