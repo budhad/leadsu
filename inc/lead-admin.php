@@ -2,7 +2,7 @@
 
 class LeadAdmin {
     // private $offers;
-    private $options;
+    private $options = [];
     // private $offer_meta_boxes = [
     //     'id_lead'   => 'id',
     //     'offer_url'   => 'offer_url'
@@ -112,7 +112,9 @@ class LeadAdmin {
 
     // Получить значение настройки плагина, если она есть
     public function get_option($name) {
-        return $this->options[$name] ?: '-1'; 
+        if ($this->options){
+            return $this->options[$name] ?: '-1'; 
+        }
     }
 
     // html страницы нсатроек
