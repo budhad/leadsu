@@ -267,26 +267,26 @@ class LeadAdmin {
                 'slug'  => 'catoff1'
             )
         ));
-        register_taxonomy('lead_bests_categories', ['lead_offers'] ,array(
-            'label' => 'Категории лучших предложений',
-            'labels'    => array(
-                'name'               => 'Категории лучших предложений',
-                'singular_name'      => 'Категория лучшего предложения',
-                'add_new'            => 'Добавить категорию лучшего предложения',
-                'add_new_item'       => 'Добавить категорию лучшего предложения',
-                'edit_item'          => 'Редактировать категорию лучшего предложения',
-                'new_item'           => 'Новая категория лучшего предложения',
-                'view_item'          => 'Посмотреть категорию лучшего предложения',
-                'search_items'       => 'Найти категорию лучшего предложения',
-                'not_found'          => 'Категорий лучших предложений не найдено',
-                'parent_item_colon'  => '',
-                'menu_name'          => 'Категории лучших предложений'
-            ),
-            'public'    => true,
-            'hierarchical'  => true,
-            'show_admin_column' => true,
-            'show_in_quick_edit'    => true,
-        ));
+        // register_taxonomy('lead_bests_categories', ['lead_offers'] ,array(
+        //     'label' => 'Категории лучших предложений',
+        //     'labels'    => array(
+        //         'name'               => 'Категории лучших предложений',
+        //         'singular_name'      => 'Категория лучшего предложения',
+        //         'add_new'            => 'Добавить категорию лучшего предложения',
+        //         'add_new_item'       => 'Добавить категорию лучшего предложения',
+        //         'edit_item'          => 'Редактировать категорию лучшего предложения',
+        //         'new_item'           => 'Новая категория лучшего предложения',
+        //         'view_item'          => 'Посмотреть категорию лучшего предложения',
+        //         'search_items'       => 'Найти категорию лучшего предложения',
+        //         'not_found'          => 'Категорий лучших предложений не найдено',
+        //         'parent_item_colon'  => '',
+        //         'menu_name'          => 'Категории лучших предложений'
+        //     ),
+        //     'public'    => true,
+        //     'hierarchical'  => true,
+        //     'show_admin_column' => true,
+        //     'show_in_quick_edit'    => true,
+        // ));
     }
 
     public function add_admin_menu_page() {
