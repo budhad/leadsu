@@ -239,9 +239,9 @@ class LeadAdmin {
             'has_archive'    => true,
             'menu_icon' => 'dashicons-plugins-checked',
             'supports'  => ['thumbnail', 'title', 'editor', 'custom-fields', 'comments'],
-            'rewrite'   => array(
-                'slug'  => 'offers1'
-            )
+            // 'rewrite'   => array(
+            //     'slug'  => 'offers1'
+            // )
         ) );
     
         register_taxonomy('lead_categories', ['lead_offers'] ,array(
@@ -263,9 +263,9 @@ class LeadAdmin {
             'hierarchical'  => true,
             'show_admin_column' => true,
             'show_in_quick_edit'    => true,
-            'rewrite'   => array(
-                'slug'  => 'catoff1'
-            )
+            // 'rewrite'   => array(
+            //     'slug'  => 'catoff1'
+            // )
         ));
         // register_taxonomy('lead_bests_categories', ['lead_offers'] ,array(
         //     'label' => 'Категории лучших предложений',
